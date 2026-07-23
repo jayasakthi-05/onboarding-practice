@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>User Registration Form</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+    <form>
+
+        <fieldset>
+            <legend>Account Credentials</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+        </fieldset>
+<fieldset>
+    <legend>Personal Profile</legend>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" min="1950-01-01" max="2010-12-31" required><br><br>
+
+    <p>Preferred Contact Method:</p>
+
+    <input type="radio" id="email-contact" name="contact" value="Email" required>
+    <label for="email-contact">Email</label><br>
+
+    <input type="radio" id="phone-contact" name="contact" value="Phone">
+    <label for="phone-contact">Phone</label><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Canada">Canada</option>
+    </select><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="text"
+           id="phone"
+           name="phone"
+           pattern="[0-9]{10}"
+           placeholder="10-digit phone number"
+           required><br><br>
+
+    <label for="bio">Tell us about yourself:</label><br>
+    <textarea id="bio" name="bio" rows="5" cols="30"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</fieldset>
+    </form>
+
+</main>
+
+</body>
+</html>
