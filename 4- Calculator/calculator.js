@@ -37,7 +37,10 @@ buttons.forEach(button => {
 
 });
 
+
 function inputNumber(number) {
+
+     if (errorState) return;
 
     if (resetScreen) {
         currentNumber = "";
@@ -59,6 +62,8 @@ function updateDisplay() {
 
 function inputDecimal() {
 
+      if (errorState) return;
+
     if (!currentNumber.includes(".")) {
         currentNumber += ".";
     }
@@ -68,6 +73,13 @@ function inputDecimal() {
 
 
 function chooseOperator(op) {
+
+    if (errorState) return;
+
+    if (resetScreen) {
+        operator = op;
+        return;
+    }
 
     if (currentNumber === "") return;
 
