@@ -1,0 +1,10 @@
+# Visual Studio temporary files
+.vs/
+**/.vs/
+
+# Build output
+**/bin/
+**/obj/
+
+# Backup folder - not part of the submission
+/5- Login Page - Backup/
