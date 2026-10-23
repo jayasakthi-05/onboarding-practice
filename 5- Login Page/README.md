@@ -58,6 +58,11 @@ Passwords are not stored as plain text. The application uses BCrypt to verify a 
 
 New users must be registered with a BCrypt password hash. Do not insert plain-text passwords into the `PasswordHash` column.
 
+## Username and Password
+  
+Username - testuser
+Password - Test@12345
+
 ## How to Run in Visual Studio
 
 1. Open the solution in Visual Studio.
